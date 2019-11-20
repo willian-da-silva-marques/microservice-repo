@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    password: root
+    username: root
+    url: jdbc:mysql://localhost:3300/fornecedor?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC
+  jpa:
+    hibernate:
+      ddl-auto: create
