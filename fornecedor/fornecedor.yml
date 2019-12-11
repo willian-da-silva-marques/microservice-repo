@@ -1,8 +1,13 @@
 spring:
   datasource:
-    password: root
+    url: jdbc:mysql://localhost:3306/parceiros?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC
     username: root
-    url: jdbc:mysql://localhost:3306/fornecedor?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC
+    password: maria
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MariaDBDialect
